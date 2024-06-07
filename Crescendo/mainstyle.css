@@ -1,0 +1,385 @@
+@font-face {
+	font-family: NativeUI;
+	src: url(./Ubuntu-UI.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* pointer-events: none; */
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: 'NativeUI', 'Roboto', sans-serif;
+}
+
+:root {
+	--ThemeHEX: #035F6B;
+	--ThemeHSL: hsl(187, 95%, 22%);
+
+	--TXTlight: #DCDCDC;
+	--TXTgreys: #2F3336;
+
+	--linksBGs: #111111;
+	--cometBGs: #5F9EA0;
+	--IOsearch: #AAAAAA;
+	--IOground: #FFFFFF;
+
+
+	--Tline: hsl(187, 95%, 88%);
+	--Thigh: hsl(187, 95%, 99%);
+
+	--theme: #20C997;
+	--Borde: rgba(0, 0, 0, 0.175);
+
+	--nIem: #DEE2E6;
+	--nitems: #383838;
+
+
+
+
+	--obergins: #77216F;
+
+
+
+
+	--texts: #303030;
+
+	--lines: #DEE2E6;
+
+
+}
+
+a,img,input,button {
+	all: unset;
+	width: 100%;
+	font: inherit;
+	box-sizing: border-box;
+}
+
+#iJava {
+	padding-top: 10vh;
+}
+#cloak {
+	display: none !important;
+}
+
+@keyframes glowIn { from { opacity: 0; } to { opacity: 1; } } .GlowIn {animation: glowIn 0.3s linear forwards;}
+
+/* box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.2); */
+/* first value is the horizontal offset */
+/* second value is the vertical offset, */
+/* third value is the blur radius */
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+
+#myMenu {
+	opacity: 0;
+	transform: translateY(-100%);
+	transition: all 0.5s ease-in-out; /* Animation style */
+  }
+  
+  #myMenu.show {
+	opacity: 1;
+	transform: translateY(0%);
+  }
+
+
+  
+  #myMenu {
+	opacity: 0;
+	transform: translateY(-100%);
+	transition: all 0.5s ease-in-out; /* Animation style */
+  }
+  
+  #myMenu.show {
+	opacity: 1;
+	transform: translateY(0%);
+  }
+  
+  .hidden {
+	display: none; /* Initially hide the menu */
+  }
+  
+  
+
+dialog
+{
+	color: var(--ThemeHSL);
+	margin: auto;
+	padding: 1rem;
+	border-radius: 1rem;
+	outline: none !important;
+	box-shadow: none !important;
+	border: 1px solid var(--ThemeHSL);
+
+	&::backdrop {background: none !important;}
+
+	&.glid {
+		transform: scale(0.9);
+		transition: transform 0.15s;
+	}
+
+	.title {font-size: 120%; line-height: 1; font-weight: bold;}
+	.price {font-size: 100%; line-height: 2;}
+}
+
+#Delta
+{
+	position: fixed;
+	inset: 0 0 auto 0;
+
+	> div
+	{
+		display: grid;
+	* {
+		display: flex;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	> div:first-child {aspect-ratio: 1/1;}
+	> div:last-child {aspect-ratio: 1/1;}
+	}
+
+	a {aspect-ratio: 1; div {aspect-ratio: 1; width: 60%;}}
+	i {font-size: xx-large;}
+	p {font-size: small;}
+
+	#links { * {background-size: 60%; background-repeat: no-repeat; background-position: center; justify-content: end; padding-bottom: 0.5rem;}}
+
+> :nth-child(1) {color: var(--TXTlight); font-size: 1.6rem; background: var(--ThemeHSL); grid-template-columns: 5vh auto 5vh;}
+> :nth-child(2) {color: var(--TXTlight); font-size: 0.8rem; background: var(--linksBGs); grid-template-columns: 1fr 1fr 1fr 1fr;}
+> :nth-child(3) {color: var(--TXTgreys); font-size: 1.2rem; background: var(--cometBGs); grid-template-columns: 1fr 1fr 1fr 1fr;}
+> :nth-child(4) {color: var(--TXTgreys); font-size: 1.0rem; grid-template-columns: 3vh 2vh auto 5vh 2vh 3vh;}
+
+> :nth-child(3)
+{
+	border: 1px solid var(--ThemeHSL);
+	border-radius: 0 0 0.375rem 0.375rem;
+}
+
+#searchbar {flex: 1 0 0px; border: 1px solid var(--IOsearch); border-radius: 0 0.375rem 0 0.375rem; background: var(--IOground);}
+#cometsbtn {flex: 0 0 5vh; border: 1px solid var(--ThemeHSL); border-radius: 0.375rem 0 0.375rem 0; background: var(--IOground);}
+
+&::after {
+	content: "";
+	z-index: -1;
+	display: block;
+	position: relative;
+	margin: auto 5vh;
+	top: -4vh;
+	height: 2vh;
+	background: var(--ThemeHSL);
+	border-radius: 0 0 50% 50%;
+	box-shadow: 0px 2.5vh 1vh rgba(0, 0, 0, 0.3);
+}
+.hide {
+	overflow: hidden;
+	transition: all 1s;
+	max-height: 0vw;
+}
+.show {
+	max-height: 50vw;
+	/* scale: 1; */
+	/* opacity: 1; */
+	/* filter: blur(0); */
+	/* transform: translateY(0); */
+}
+.high {
+	background: var(--ThemeHSL) !important;
+}
+}
+
+#iconShops {background-image: url('data:image/svg+xml,<svg viewBox="0 0 18 18" fill="%23383838" xmlns="http://www.w3.org/2000/svg"><path d="M 3.971 1.373 C 4.161 1.137 4.439 1 4.731 1 L 13.271 1 C 13.563 1 13.841 1.137 14.031 1.373 L 16.64 4.62 C 16.873 4.91 17.001 5.279 17.001 5.661 L 17.001 5.933 C 17.001 7.883 15.022 9.102 13.439 8.127 C 13.173 7.964 12.939 7.747 12.751 7.489 C 12.301 8.106 11.609 8.468 10.876 8.467 C 10.143 8.468 9.451 8.106 9.001 7.489 C 8.551 8.106 7.859 8.468 7.126 8.467 C 6.393 8.468 5.701 8.106 5.251 7.489 C 4.129 9.028 1.865 8.695 1.176 6.888 C 1.06 6.585 1.001 6.261 1.001 5.933 L 1.001 5.661 C 1.001 5.279 1.129 4.91 1.362 4.62 L 3.971 1.373 Z M 5.751 5.933 C 5.751 7.062 6.897 7.768 7.814 7.204 C 8.239 6.941 8.501 6.457 8.501 5.933 C 8.501 5.523 8.918 5.267 9.251 5.471 C 9.406 5.566 9.501 5.742 9.501 5.933 C 9.501 7.062 10.647 7.768 11.564 7.204 C 11.989 6.941 12.251 6.457 12.251 5.933 C 12.251 5.523 12.668 5.267 13.001 5.471 C 13.156 5.566 13.251 5.742 13.251 5.933 C 13.251 7.062 14.397 7.768 15.314 7.204 C 15.739 6.941 16.001 6.457 16.001 5.933 L 16.001 5.661 C 16.001 5.534 15.958 5.412 15.881 5.315 L 13.271 2.067 L 4.731 2.067 L 2.121 5.315 C 2.044 5.412 2.001 5.534 2.001 5.661 L 2.001 5.933 C 2.001 7.062 3.147 7.768 4.064 7.204 C 4.489 6.941 4.751 6.457 4.751 5.933 C 4.751 5.523 5.168 5.267 5.501 5.471 C 5.656 5.566 5.751 5.742 5.751 5.933 M 2.501 9 C 2.777 9 3.001 9.239 3.001 9.533 L 3.001 15.933 L 4.001 15.933 L 4.001 10.6 C 4.001 10.011 4.449 9.533 5.001 9.533 L 8.001 9.533 C 8.553 9.533 9.001 10.011 9.001 10.6 L 9.001 15.933 L 15.001 15.933 L 15.001 9.533 C 15.001 9.123 15.418 8.867 15.751 9.071 C 15.906 9.166 16.001 9.342 16.001 9.533 L 16.001 15.933 L 16.501 15.933 C 16.886 15.933 17.126 16.378 16.934 16.733 C 16.845 16.899 16.68 17 16.501 17 L 1.501 17 C 1.116 17 0.876 16.555 1.068 16.2 C 1.157 16.035 1.322 15.933 1.501 15.933 L 2.001 15.933 L 2.001 9.533 C 2.001 9.239 2.225 9 2.501 9 M 5.001 15.933 L 8.001 15.933 L 8.001 10.6 L 5.001 10.6 L 5.001 15.933 Z M 10.001 10.6 C 10.001 10.011 10.449 9.533 11.001 9.533 L 13.001 9.533 C 13.553 9.533 14.001 10.011 14.001 10.6 L 14.001 13.8 C 14.001 14.389 13.553 14.867 13.001 14.867 L 11.001 14.867 C 10.449 14.867 10.001 14.389 10.001 13.8 L 10.001 10.6 Z M 13.001 10.6 L 11.001 10.6 L 11.001 13.8 L 13.001 13.8 L 13.001 10.6 Z"></path></svg>');}
+#iconSales {background-image: url('data:image/svg+xml,<svg viewBox="0 0 18 18" fill="%23383838" xmlns="http://www.w3.org/2000/svg"><path d="M 9 2.083 C 8.015 1.049 6.587 0.895 5.287 1.054 C 3.773 1.241 2.245 1.874 1.293 2.403 C 1.115 2.502 1 2.719 1 2.958 L 1 16.389 C 1 16.833 1.376 17.128 1.707 16.944 C 2.589 16.456 4.01 15.868 5.387 15.699 C 6.796 15.525 7.977 15.805 8.61 16.77 C 8.81 17.075 9.19 17.075 9.39 16.77 C 10.023 15.805 11.204 15.525 12.612 15.699 C 13.99 15.868 15.412 16.456 16.293 16.944 C 16.624 17.128 17 16.833 17 16.389 L 17 2.958 C 17 2.719 16.885 2.502 16.707 2.403 C 15.755 1.874 14.227 1.241 12.713 1.054 C 11.413 0.894 9.985 1.049 9 2.083"></path></svg>');}
+#iconStock {background-image: url('data:image/svg+xml,<svg viewBox="0 0 18 18" fill="%23383838" xmlns="http://www.w3.org/2000/svg"><path d="M 11.286 2.5 C 11.286 2.224 11.03 2 10.714 2 L 7.286 2 C 6.97 2 6.714 2.224 6.714 2.5 L 6.714 3.5 C 6.714 3.776 6.97 4 7.286 4 L 10.714 4 C 11.03 4 11.286 3.776 11.286 3.5 L 11.286 2.5 Z M 5.571 2.5 C 5.571 1.672 6.339 1 7.286 1 L 10.714 1 C 11.661 1 12.429 1.672 12.429 2.5 L 12.429 3.5 C 12.429 4.328 11.661 5 10.714 5 L 7.286 5 C 6.339 5 5.571 4.328 5.571 3.5 L 5.571 2.5 Z M 3.286 2.5 L 4.429 2.5 L 4.429 3.5 C 4.429 4.881 5.708 6 7.286 6 L 10.714 6 C 12.292 6 13.571 4.881 13.571 3.5 L 13.571 2.5 L 14.714 2.5 C 15.977 2.5 17 3.395 17 4.5 L 17 15 C 17 16.105 15.977 17 14.714 17 L 3.286 17 C 2.023 17 1 16.105 1 15 L 1 4.5 C 1 3.395 2.023 2.5 3.286 2.5"></path></svg>');}
+#iconRepos {background-image: url('data:image/svg+xml,<svg viewBox="0 0 16 16" fill="%23383838" xmlns="http://www.w3.org/2000/svg"><path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3M2.19 3q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742"/></svg>');}
+#iconLouge {background-image: url('data:image/svg+xml,<svg viewBox="0 0 16 16" fill="%23383838" xmlns="http://www.w3.org/2000/svg"><path d="M8 5.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 .5-.5"/><path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/><path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/></svg>');}
+#iconItems {background-image: url('data:image/svg+xml,<svg viewBox="0 0 16 16" fill="%23383838" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208M5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/><path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/><path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/></svg>');}
+#iconViews {background-image: url('data:image/svg+xml,<svg viewBox="0 0 16 16" fill="%23383838" xmlns="http://www.w3.org/2000/svg"><path d="M5 1v8H1V1zM1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm13 2v5H9V2zM9 1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 13v2H3v-2zm-2-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1zm12-1v2H9v-2zm-6-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/></svg>');}
+#iconShift {background-image: url('data:image/svg+xml,<svg viewBox="0 0 16 16" fill="%23383838" xmlns="http://www.w3.org/2000/svg"><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/></svg>');}
+
+
+.Galaxy
+{
+	display: grid;
+	gap: 0.5rem;
+	padding: 0.5rem;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+	> div:active {transform: scale(0.99);}
+
+	> div > img {
+		border-radius: 0.375rem;
+		border: 1px solid rgba(0, 0, 0, 0.175);
+		box-shadow: 0rem 0.25rem 0.25rem 0.0rem rgba(0, 0, 0, 0.1);
+	}
+
+	> div > div {
+		text-align	: center;
+		font-size	: 0.6rem;
+		overflow	: hidden;
+		margin		: 0px auto;
+		white-space	: nowrap;
+		max-width	: calc(100vw / 4 - 1rem);
+	}
+}
+
+.Vendor
+{
+	padding: 0.5rem;
+
+	> div {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		padding: 0.25rem;
+		margin-top: 0.5rem;
+
+		border-radius: 0.375rem;
+		border: 1px solid rgba(0, 0, 0, 0.175);
+		box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+		/* first value is the horizontal offset */
+		/* second value is the vertical offset, */
+		/* third value is the blur radius */
+		background: linear-gradient(to right, #FFFFFF, #FFFFFF 30%, #E6E6E6);
+	}
+
+	> div > div {
+		display: flex;
+		align-items: center;
+		font-weight: bold;
+	}
+
+	.catalogueHigh {background: linear-gradient(to right, #FFFFFF, #FFFFFF 30%, #CCDFE1) !important;}
+
+	div:active {transform: scale(0.99);}
+
+
+}
+
+
+#Catalogue
+{
+	display: none;
+	padding: 0.5rem;
+
+
+	div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 0.5rem;
+		padding: 0.5rem;
+		margin-top: 0.5rem;
+		border-radius: 0.625rem;
+		border: 1px solid var(--nIem);
+
+		> * {
+			padding: 0.5rem 0.75rem;
+			font-weight: bold;
+			border-radius: 0.375rem;
+		}
+	}
+
+span   {color: #FFFFFF; background: var(--theme);}
+input  {color: #035F6B; border: 1px solid var(--nIem);}
+input:focus
+{
+background: #CCDFE1 !important;
+}
+input::placeholder
+{
+color: #035F6B;
+}
+button {color: #DCDCDC; background: var(--theme); width: 25%; margin-left: auto;
+	box-shadow: 0rem 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+span:active {transform: scale(0.9);}
+
+} aside {padding: 0 !important;}
+
+
+
+/* Local Report [Sales] */
+
+.logSales
+{
+	border-top: 1px solid var(--Tline);
+
+	> div:active {background: var(--Tline);}
+
+	> div {
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	border-bottom: 1px solid var(--Tline);
+	}
+
+	> div > div {
+	padding: 0.5rem 0rem;
+	}
+
+	> div > div:nth-child(odd) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	}
+}
+
+.logStock
+{
+	margin-top: 10px;
+	border-top: 1px solid var(--Tline);
+
+	> div:active {background: var(--Tline);}
+	> div {
+	display: grid;
+	grid-template-columns: 60% 20% 20%;
+	border-bottom: 1px solid var(--Tline);
+	}
+
+	> div > div {
+	padding: 0.5rem 0rem;
+	}
+
+	> div > div:nth-child(1) {padding-left: 1rem;}
+	> div > div:nth-child(2) {display: flex; align-items: center; justify-content: center;}
+	> div > div:nth-child(3) {display: flex; align-items: center; justify-content: center;}
+}
+
+.logStats
+{
+	position: fixed;
+	inset: auto 0 0 0;
+	background: #5F9EA0;
+	border-radius: 1rem 1rem 0 0;
+	padding: 0.5rem;
+	color: #FFFFFF;
+
+	> div {
+		display: flex;
+		padding: 0.25rem;
+	}
+	> div > div:nth-child(1) {
+		padding: 0.5rem 1rem;
+		background: #035F6B;
+		border-radius: 1rem 0rem 0rem 1rem;
+	}
+	> div > div:nth-child(2) {
+		font-weight: bold;
+		padding: 0.5rem 1rem;
+		border: 1px solid #035F6B;
+		border-radius: 0rem 1rem 1rem 0rem;
+	}
+}
+

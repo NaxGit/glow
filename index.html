@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta name='theme-color' content='#035F6B'>
+<link rel='icon' href='./Crescendo/alphaicon.ico' type='image/x-icon'>
+<link rel='manifest' href='./Crescendo/manifest.json'>
+<link rel='stylesheet' href='./Crescendo/mainstyle.css'>
+<audio type='audio/mpeg' src='./Crescendo/scanbeep.mp3' id='mpscan'></audio>
+<script src='./Diminuendo/Alphadexie.js' defer></script>
+<script src='./Diminuendo/Initialize.js' async></script>
+<script src='./Diminuendo/Kythirapin.js'></script>
+<title>G⌕diva</title>
+</head>
+
+<body class='GlowIn'>
+
+<div id='Delta'>
+<div>
+<div id='deltahome'>G⌕</div>
+<div id='deltainfo'></div>
+<div id='deltamenu'>☰</div>
+</div>
+<div id='links' class='hide'>
+<div id='iconShops'>MyShop</div>
+<div id='iconSales'>Sales</div>
+<div id='iconStock'>Stock</div>
+<div id='iconRepos'>Reports</div>
+<div id='iconLouge'>Catalogue</div>
+<div id='iconItems'>NewItem</div>
+<div id='iconViews'>Views</div>
+<div id='iconShift'>Shift</div>
+</div>
+<div id='comet' class='hide'>
+<div><i>i</i><p>Sales</p><p id='cometSales'></p></div>
+<div><i>%</i><p>Faida</p><p id='cometFaida'></p></div>
+<div><i>d</i><p>Shift</p><p id='cometShift'></p></div>
+<div><i>d</i><p>G⌕diva</p><p id='cometTQapp'></p></div>
+</div>
+<div>
+<div></div>
+<div></div>
+<input id='searchbar' type='search' placeholder='Search'>
+<input id='cometsbtn' type='button' value='☄'>
+<div></div>
+<div></div>
+</div>
+</div>
+
+<div id='iJava' class=''></div>
+
+<div id='Catalogue'>
+<div id='Shelf'>
+<span>Milk</span>
+<span>Rice</span>
+<span>Pulses</span>
+<span>Yogurt</span>
+<span>Flour</span>
+<span>Oil</span>
+<span>Soda</span>
+<span>Pasta</span>
+<span>Biscuits</span>
+<span>Instant</span>
+</div>
+<div id='nItem'>
+<h3>New product <small><i>Custom</i></small></h3>
+<input type='text' id='niName' placeholder='Product name'>
+<input type='number' id='nCost' placeholder='Cost'>
+<input type='number' id='nSell' placeholder='Selling'>
+<input type='number' id='nQtys' placeholder='Quantity'>
+<input type='hidden' id='nGroup'>
+<input type='hidden' id='nPlace'>
+<input type='hidden' id='nSKU'>
+<input type='hidden' id='niIcon'>
+<button onclick='findItemWithBiggestSku()'>✓</button>
+</div>
+<div id='cloak'>
+<aside id='CATinput' class='logues'>
+<div>
+<input type='number' id='costInput' placeholder='Cost price'>
+<input type='number' id='sellInput' placeholder='Selling price'>
+<input type='number' id='qtysInput' placeholder='Quantity'>
+<button onclick='cat6Punch()'>✓</button>
+</div>
+</aside>
+</div>
+</div>
+
+<dialog id='dialog'></dialog>
+
+<div id='library'><script id='Book'></script></div>
+
+</body>
+</html>
